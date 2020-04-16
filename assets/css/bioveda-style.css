@@ -1,0 +1,264 @@
+html, body {
+  padding: 0px !important;
+  margin: 0px !important;
+  width: 100%;
+}
+
+h5, header a, a {
+  font-weight: 400;
+  color: #145da6;
+}
+
+h1, h2, h3 {
+  font-family: "Averia Serif Libre", cursive;
+  color: #145da6;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+a, li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.fixed {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background: white;
+  z-index: 10;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+header a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  max-width: 450px;
+}
+
+.menu {
+  padding: 18px 10px;
+  background-color: #145da6;
+}
+
+.menu li {
+  display: inline;
+  margin-right: 20px;
+  padding: 25px 20px;
+  font-size: 29px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.menu li a {
+  color: white;
+}
+
+.large-full, .large-cover, .medium-long, .large-half {
+  padding-top: 220px;
+  margin-bottom: 40px;
+  padding-bottom: 70px;
+  border-bottom: 2px solid #145da6;
+}
+
+.large-full {
+  width: 100%;
+  min-height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-image: url("/assets/images/ashley-batz-betmVWGYcLY-unsplash.jpg");
+  background-size: cover;
+  border-bottom: 2px solid #F09819;
+}
+
+.large-full .single-container {
+  width: 40%;
+  background-color: white;
+  padding: 30px 20px;
+  opacity: 0.8;
+}
+
+footer {
+  width: 95%;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  margin: auto;
+}
+
+.large-cover {
+  background-image: url("/assets/images/karim-ghantous-dxS2okXd-zo-unsplash.jpg");
+  width: 100%;
+  min-height: 80vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.large-cover .text {
+  width: 65%;
+  background-color: white;
+  opacity: 0.8;
+  padding: 40px 20px;
+  margin: auto;
+}
+
+.medium-long li {
+  line-height: 1.8;
+  color: #6584ab;
+}
+
+.medium-long .medium-long-container {
+  width: 70%;
+  margin: auto;
+}
+
+.medium-long .medium-long-container ul li {
+  list-style-type: circle;
+}
+
+.medium-long .medium-long-container .image-1, .medium-long .medium-long-container .image-2, .medium-long .medium-long-container .image-3, .medium-long .medium-long-container .image-4, .medium-long .medium-long-container .image-5, .medium-long .medium-long-container .image-6 {
+  background-size: cover;
+  background-position: center;
+  height: 320px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.medium-long .medium-long-container .image-1 {
+  background-image: url("/assets/images/ayurveda.png");
+}
+
+.medium-long .medium-long-container .image-2 {
+  background-image: url("/assets/images/ayurveda-1.png");
+}
+
+.medium-long .medium-long-container .image-3 {
+  background-image: url("/assets/images/ayurveda-2.png");
+}
+
+.medium-long .medium-long-container .image-4 {
+  background-image: url("/assets/images/calum-lewis-vA1L1jRTM70-unsplash.jpg");
+}
+
+.medium-long .medium-long-container .image-5 {
+  background-image: url("/assets/images/nathan-dumlao-ewGMqs2tmJI-unsplash.jpg");
+}
+
+.medium-long .medium-long-container .image-6 {
+  background-image: url("/assets/images/ben-white-W8Qqn1PmQH0-unsplash.jpg");
+}
+
+#wrap-image {
+  float: left;
+  margin: 2px 40px 20px 5px;
+}
+
+.large-half {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.large-half .first-half {
+  width: 50%;
+}
+
+.large-half .first-half p, .large-half .first-half a {
+  padding-left: 20px;
+  margin-top: 50px;
+}
+
+.large-half .first-half li {
+  line-height: 1.8;
+  color: #6584ab;
+}
+
+.large-half .second-half {
+  width: 50%;
+  background-image: url("/assets/images/courses.png");
+}
+
+@media screen and (max-width: 750px) {
+  .large-half {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .first-half, .second-half {
+    width: 100% !important;
+  }
+  .second-half {
+    min-height: 50vh;
+  }
+  .menu li {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .menu li {
+    margin-right: 0px;
+    font-size: 22px;
+    padding: 40px 10px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .menu li {
+    margin-right: 0px !important;
+    font-size: 19px;
+    padding: 30px 8px;
+  }
+  header p {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .menu li {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .menu li {
+    margin-right: 0px;
+    font-size: 14px;
+    padding: 10px 2px !important;
+  }
+}
+/*# sourceMappingURL=bioveda-style.css.map */

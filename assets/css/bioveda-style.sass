@@ -1,0 +1,192 @@
+html, body
+    padding: 0px !important
+    margin: 0px !important
+    width: 100%
+
+$brandcolor: #145da6 
+$brandcolor2: #7eda53
+
+h5, header a, a
+    font-weight: 400   
+    color: $brandcolor
+
+$font-default: 'Open Sans', sans-serif
+$font-custom: 'Averia Serif Libre', cursive
+// $font-custom: 'Berkshire Swash', cursive
+// $font-custom: 'Mirza', cursive
+
+h1, h2, h3 
+    font-family: $font-custom
+    color: $brandcolor 
+p 
+    font-family: $font-default
+    line-height: 1.8
+    font-weight: 300        
+
+a, li 
+    text-decoration: none   
+    list-style: none
+  
+
+.fixed
+    position: fixed
+    top: 0px
+    width: 100%
+    background: white
+    z-index: 10
+
+body     
+    overflow-x: hidden
+    width: 100% 
+
+header a 
+    display: flex 
+    flex-direction: row
+    align-items: flex-end 
+    max-width: 450px 
+
+
+.menu 
+    padding: 18px 10px 
+    // background: #F09819;  /* fallback for old browsers */
+    // background: -webkit-linear-gradient(to right, #EDDE5D, #F09819);  /* Chrome 10-25, Safari 5.1-6 */
+    // background: linear-gradient(to right, #EDDE5D, #F09819); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: $brandcolor
+.menu li 
+    display: inline   
+    margin-right: 20px
+    padding: 25px 20px 
+    font-size: 29px
+    font-family: $font-default
+    a 
+        color: white
+
+.large-full, .large-cover, .medium-long, .large-half
+    padding-top: 220px
+    margin-bottom: 40px
+    padding-bottom: 70px
+    border-bottom: 2px solid $brandcolor
+
+.large-full
+    width: 100%
+    min-height: 60vh  
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    align-items: center
+    flex-wrap: wrap
+    background-image: url("/assets/images/ashley-batz-betmVWGYcLY-unsplash.jpg") 
+    background-size: cover
+    border-bottom: 2px solid #F09819
+    .single-container
+        width: 40%
+        background-color: white
+        padding: 30px 20px 
+        opacity: 0.8
+
+footer 
+    width: 95%
+    text-align: center    
+    // margin-right: 100px
+    font-family: $font-default
+    margin: auto
+
+  
+.large-cover
+    background-image: url("/assets/images/karim-ghantous-dxS2okXd-zo-unsplash.jpg")
+    width: 100%
+    min-height: 80vh
+    background-position: center
+    background-size: cover
+    .text
+        width: 65%
+        background-color: white
+        opacity: 0.8
+        padding: 40px 20px 
+        margin: auto
+
+.medium-long
+    li 
+        line-height: 1.8
+        color: #6584ab
+    .medium-long-container
+        width: 70%  
+        margin: auto
+        ul li 
+            list-style-type: circle 
+        .image-1, .image-2, .image-3, .image-4, .image-5, .image-6
+            background-size: cover
+            background-position: center
+            height: 320px
+            margin-top: 80px
+            margin-bottom: 80px
+        .image-1, 
+            background-image: url("/assets/images/ayurveda.png")
+        .image-2 
+            background-image: url("/assets/images/ayurveda-1.png")
+        .image-3
+            background-image: url("/assets/images/ayurveda-2.png")
+        .image-4
+            background-image: url("/assets/images/calum-lewis-vA1L1jRTM70-unsplash.jpg")
+        .image-5
+            background-image: url("/assets/images/nathan-dumlao-ewGMqs2tmJI-unsplash.jpg")
+        .image-6
+            background-image: url("/assets/images/ben-white-W8Qqn1PmQH0-unsplash.jpg")
+ 
+
+#wrap-image
+    float: left
+    margin: 2px 40px 20px 5px 
+.large-half
+    margin: auto
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    .first-half
+        width: 50%
+        p, a 
+            padding-left: 20px
+            margin-top: 50px
+        li 
+            line-height: 1.8
+            color: #6584ab
+    .second-half
+        width: 50%
+        background-image: url("/assets/images/courses.png") 
+
+@media screen and ( max-width: 750px  )
+    .large-half
+        flex-direction: column-reverse
+        flex-
+    .first-half, .second-half
+        width: 100% !important
+    .second-half
+        min-height: 50vh
+    .menu li 
+        font-size: 22px
+    
+@media screen and ( max-width: 650px  )
+        .menu li 
+            margin-right: 0px
+            font-size: 22px
+            padding: 40px 10px 
+ 
+@media screen and ( max-width: 440px  )
+        .menu li 
+            margin-right: 0px !important
+            font-size: 19px
+            padding: 30px 8px 
+
+        header p 
+            font-size: 13px  
+
+@media screen and ( max-width: 390px  )
+     .menu li 
+         font-size: 14px             
+
+@media screen and ( max-width: 360px  )
+        .menu li 
+            margin-right: 0px
+            font-size: 14px
+            padding: 10px 2px !important
+
